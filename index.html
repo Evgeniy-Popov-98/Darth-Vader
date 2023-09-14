@@ -15,55 +15,88 @@
 </head>
 
 <body>
-	<header></header>
-	<section class="head">
-		<div class="logo-plus-buttin">
-			<img class="logo" src="./images/logo.svg" alt="Логотим сайта ввиде текста">
+	<header class="header">
+		<div class="header-content">
+			<img class="header-logo" src="./images/logo.svg" alt="Логотим сайта ввиде текста">
 			<!-- форма для изменения стиля сайта(из темного в светлый) -->
 			<div class="header-switch">
-				<p>Dark</p>
+				<p class="header-text">Dark</p>
 				<a href="" class="switch">switch</a>
-				<p>Light</p>
+				<p class="header-text">Light</p>
 			</div>
 		</div>
-		<div class="head-content">
-			<div class="left-content">
-				<p class="left-content__small-text">Владыка Ситх</p>
-				<h1 class="main-title">Дарт Вейдер <br> Энакин Скайуокер</h1>
-				<ul class="small-list">
-					<li>Инженер-конструктор</li>
-					<li>Командор армии</li>
-					<li>Верховный генерал</li>
-				</ul>
-				<div class="button">
-					<!-- Кнопка для открития форми заполнения регистрации -->
-					<a href="">Принести клятву верности</a>
+	</header>
+
+	<main>
+		<section class="hero">
+			<div class="hero-content">
+				<div class="hero-left-content">
+					<p class="hero-left-content-text">Владыка Ситх</p>
+					<h1 class="hero-left-content-title">Дарт Вейдер <br> Энакин Скайуокер</h1>
+					<ul class="hero-left-content-list">
+						<li class="hero-left-content-item">Инженер-конструктор</li>
+						<li class="hero-left-content-item">Командор армии</li>
+						<li class="hero-left-content-item">Верховный генерал</li>
+					</ul>
+					<div class="hero-left-content-button">
+						<!-- Кнопка для открития форми заполнения регистрации -->
+						<a class="hero-left-content-link" href="">Принести клятву верности</a>
+					</div>
+					<div class="hero-left-content-subtext">
+						<p>Принесение клятвы верности Лорду Ситху избавит тебя от обуз морали и этики</p>
+					</div>
 				</div>
-				<div class="subtext">
-					<p>Принесение клятвы верности Лорду Ситху избавит тебя от обуз морали и этики</p>
-					<p>Покой — это ложь. Есть только страсть.</p>
+				<div class="hero-img-star">
+					<img src="./images/death-star.png" alt="Звезда смерти" width="480">
 				</div>
-			</div>
-			<div class="right-content">
-				<!-- <img src="./images/death-star.png" alt="Звезда смерти" width="480">
-				<img src="./images/darth-vader.png" alt="Дарт Вейдер" width="688"> -->
-				<nav class="social-networks">
-					<ul class="social-networks__list">
-						<li><a href=""><img src="./images/icons/social-networks/mdi_youtube.svg" alt="Youtube"></a></li>
+				<div class="hero-img-dart">
+					<img src="./images/darth-vader.png" alt="Дарт Вейдер" width="668">
+				</div>
+				<div class="hero-right-content">
+					<ul class="hero-right-content-list">
+						<li><a href=""><img src="./images/icons/social-networks/mdi_youtube.svg" alt="Youtube"></a>
+						</li>
 						<li><a href=""><img src="./images/icons/social-networks/mdi_instagram.svg" alt="Instagram"></a>
 						</li>
-						<li><a href=""><img src="./images/icons/social-networks/mdi_twitter.svg" alt="Twitter"></a></li>
+						<li><a href=""><img src="./images/icons/social-networks/mdi_twitter.svg" alt="Twitter"></a>
+						</li>
 					</ul>
-				</nav>
-				<div class="subtext">
-					<p>Покой — это ложь. Есть только страсть.</p>
+					<div class="hero-right-content-subtext">
+						<p>Покой — это ложь. Есть только страсть.</p>
+					</div>
 				</div>
 			</div>
-		</div>
-	</section>
+		</section>
 
+		<section class="brief-description">
+			<h2 class="brief-description-title">Профессиональные и личные достижения</h2>
+			<ul class="brief-description-list">
+				<li class="brief-description-item">
+					<img src="/images/icons/section-brief-description/swords.svg" alt="Иконка световых мечей">
+					<h3 class="brief-description-subtitle">Долгосрочное планирование: </h3>
+					<p class="brief-description-text">исполнил пророчество - уравновесил Силу сравняв количество Джедаев
+						и Ситхов</p>
+				</li>
+				<li class="brief-description-item">
+					<img src="/images/icons/section-brief-description/star.svg" alt="Иконка звезды смерти">
+					<h3 class="brief-description-subtitle">Антикризисный менеджмент:</h3>
+					<p class="brief-description-text">завершил долгострой “Звезду смерти”</p>
+				</li>
+				<li class="brief-description-item">
+					<img src="/images/icons/section-brief-description/soldier.svg" alt="Иконка солдата">
+					<h3 class="brief-description-subtitle">Управление персоналом:</h3>
+					<p class="brief-description-text">Более миллиона солдат и офицеров на борту “Звезды смерти””</p>
+				</li>
+				<li class="brief-description-item">
+					<img src="/images/icons/section-brief-description/hand.svg" alt="Иконка руки">
+					<h3 class="brief-description-subtitle">Разработка систем мотивации: </h3>
+					<p class="brief-description-text">метод удушения провинившихся сотрудников на расстоянии, с помощью
+						Силы </p>
+				</li>
+			</ul>
 
-	<main></main>
+		</section>
+	</main>
 
 	<footer></footer>
 </body>
