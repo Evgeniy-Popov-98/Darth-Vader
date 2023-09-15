@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+ul {
+  text-decoration: none;
+  list-style: none; /*------------Уточнить-------------*/
+}
+
+body {
+  max-width: 1360px;
+  margin: 0 auto;
+  background: url(/images/space.png) no-repeat center top;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+.header {
+  margin: 0 95px;
+}
+
+.header-content {
+  margin: 32px 0 72px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-switch {
+  display: flex;
+}
+
+.header-text {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.hero {
+  margin: 0 95px;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-left-content-text {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.hero-left-content-title {
+  max-width: 573px;
+  margin-top: 16px;
+  font-size: 46px;
+  font-style: italic;
+  line-height: 1.39;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #ffc700;
+}
+
+.hero-left-content-list {
+  padding-top: 24px;
+  color: #ffffff;
+}
+
+.hero-left-content-list li {
+  padding-top: 8px;
+}
+
+.hero-left-content-list li:first-child {
+  padding-top: 0;
+}
+
+.hero-left-content-button {
+  margin-top: 24px;
+  padding: 16px 32px;
+  max-width: 291px;
+  max-height: 56px;
+  background-color: #ffc700;
+  border-radius: 38px;
+}
+
+.hero-left-content-link {
+  line-height: 1.5;
+  color: #060803;
+}
+
+.hero-left-content-subtext {
+  max-width: 374px;
+  margin-top: 104px;
+}
+
+.hero-left-content-subtext p {
+  color: #ffffff;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.hero-img-star {
+  position: relative;
+  top: 184px;
+  left: -220px;
+  opacity: 0.4;
+  /* overflow: hidden; */
+}
+
+.hero-img-star img {
+  position: absolute;
+}
+
+.hero-img-dart {
+  position: relative;
+  top: -136px;
+  left: -130px;
+}
+
+.hero-img-dart img {
+  position: absolute;
+}
+
+.hero-right-content {
+  z-index: 1;
+  text-align: right;
+  padding-top: 40px;
+}
+
+.hero-right-content-list li {
+  margin-bottom: 20px;
+}
+
+.hero-right-content-list li:last-child {
+  margin-bottom: 0;
+}
+
+.hero-right-content-subtext {
+  margin-top: 315px;
+  color: #ffffff;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.brief-description {
+  background-image: url(/images/brief.png);
+  margin-top: 60px;
+  padding-bottom: 60px;
+}
+
+.brief-description-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #ffc700;
+  padding: 60px 0 0 95px;
+}
+
+.brief-description-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 95px 0 95px;
+}
+
+.brief-description-item {
+  max-width: 275px;
+}
+
+.brief-description-subtitle {
+  padding-top: 32px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #ffc700;
+}
+
+.brief-description-text {
+  padding-top: 4px;
+  line-height: 1.5;
+  color: #ffffff;
+  text-align: left;
+}
+
+/** ====================== CODEX ================== */
+
+.codex {
+  padding: 186px 95px;
+  background: url(/images/space.png) no-repeat center 100%;
+}
+
+.codex-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.codex-title-text {
+  max-width: 573px;
+  color: #ffc700;
+  font-size: 46px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1.3; /* 130.435% */
+  letter-spacing: 0.02em;
+}
+
+.rigth-content {
+  margin-left: 24px;
+}
+
+.codex-title {
+  color: #ffc700;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5px; /* 150% */
+}
+
+.codex-list {
+  margin-top: 32px;
+}
+
+.codex-item {
+  padding-bottom: 4px;
+}
+
+.codex-item:last-child {
+  padding-bottom: 0;
+}
+
+.codex-text {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5; /* 150% */
+}
+
+.codex-subtext {
+  margin-top: 60px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5; /* 150% */
+}
+
+/** ================================================ */
+
+/* ======================= FOOTER ====================== */
+
+.footer {
+  background-color: #222527;
+}
+
+.footer-content {
+  padding: 60px;
+  text-align: center;
+}
+
+.footer-text {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  max-width: 740px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5; /* 150% */
+}
+
+/* ================================================ */
