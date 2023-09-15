@@ -106,7 +106,7 @@ body {
   top: 184px;
   left: -220px;
   opacity: 0.4;
-  /* overflow: hidden; */
+  z-index: 2;
 }
 
 .hero-img-star img {
@@ -117,6 +117,7 @@ body {
   position: relative;
   top: -136px;
   left: -130px;
+  z-index: 3;
 }
 
 .hero-img-dart img {
@@ -124,7 +125,6 @@ body {
 }
 
 .hero-right-content {
-  z-index: 1;
   text-align: right;
   padding-top: 40px;
 }
@@ -138,16 +138,20 @@ body {
 }
 
 .hero-right-content-subtext {
+  position: relative;
   margin-top: 315px;
   color: #ffffff;
   line-height: 1.5;
   font-weight: 400;
+  z-index: 4;
 }
 
 .brief-description {
+  position: relative;
   background-image: url(/images/brief.png);
   margin-top: 60px;
   padding-bottom: 60px;
+  z-index: 5;
 }
 
 .brief-description-title {
