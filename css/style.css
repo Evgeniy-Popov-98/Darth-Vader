@@ -9,6 +9,10 @@ ul {
   list-style: none; /*------------Уточнить-------------*/
 }
 
+img {
+  display: block;
+}
+
 body {
   max-width: 1360px;
   margin: 0 auto;
@@ -17,18 +21,25 @@ body {
   font-weight: 400;
 }
 
-.header {
-  margin: 0 95px;
+.container {
+  max-width: 1202px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
+/*-------------------------------------------------*/
+
 .header-content {
-  margin: 32px 0 72px 0;
+  padding-top: 32px;
   display: flex;
   justify-content: space-between;
 }
 
 .header-switch {
   display: flex;
+  justify-content: center;
+  gap: 12px;
+  z-index: 5;
 }
 
 .header-text {
@@ -37,11 +48,28 @@ body {
   line-height: 1.5;
 }
 
-.hero {
-  margin: 0 95px;
+.switch {
+  width: 36px;
+  height: 20px;
+  border-radius: 10px;
+  border: 1px solid #ffc700;
+  background-color: #000;
 }
 
+.dot-switch {
+  width: 12px;
+  height: 12px;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #ffc700;
+  margin: 3px;
+}
+
+/* ---------------------- HERO ----------------------- */
+
 .hero-content {
+  padding-top: 72px;
+  padding-bottom: 60px;
   display: flex;
   justify-content: space-between;
 }
@@ -78,16 +106,17 @@ body {
 
 .hero-left-content-button {
   margin-top: 24px;
-  padding: 16px 32px;
-  max-width: 291px;
-  max-height: 56px;
-  background-color: #ffc700;
-  border-radius: 38px;
+  width: 291px;
+  height: 56px;
 }
 
 .hero-left-content-link {
+  display: block;
+  padding: 16px 32px;
   line-height: 1.5;
   color: #060803;
+  background-color: #ffc700;
+  border-radius: 38px;
 }
 
 .hero-left-content-subtext {
@@ -125,54 +154,73 @@ body {
 }
 
 .hero-right-content {
-  text-align: right;
   padding-top: 40px;
+  z-index: 4;
 }
 
-.hero-right-content-list li {
+.hero-right-content-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.hero-right-content-item {
   margin-bottom: 20px;
+  display: flex;
+
+  justify-content: flex-end;
+  text-align: right;
 }
 
-.hero-right-content-list li:last-child {
+.hero-right-content-item img {
+  text-align: right;
+}
+
+.hero-right-content-item:last-child {
   margin-bottom: 0;
 }
 
 .hero-right-content-subtext {
   position: relative;
-  margin-top: 315px;
+  margin-top: 325px;
   color: #ffffff;
   line-height: 1.5;
   font-weight: 400;
-  z-index: 4;
 }
 
-.brief-description {
+/*-----------------------------  BRIEF  ------------------------*/
+
+.brief {
   position: relative;
   background-image: url(/images/brief.png);
-  margin-top: 60px;
-  padding-bottom: 60px;
   z-index: 5;
 }
 
-.brief-description-title {
+.container-brief {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.brief-title {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.5;
   color: #ffc700;
-  padding: 60px 0 0 95px;
 }
 
-.brief-description-list {
+.brief-list {
+  margin-top: 60px;
   display: flex;
   justify-content: space-between;
-  margin: 60px 95px 0 95px;
+  gap: 24px;
 }
 
-.brief-description-item {
-  max-width: 275px;
+.brief-item {
+  width: calc((100% - 24px * 3) / 4);
 }
 
-.brief-description-subtitle {
+.brief-subtitle {
   padding-top: 32px;
   font-size: 16px;
   font-weight: 700;
@@ -180,7 +228,7 @@ body {
   color: #ffc700;
 }
 
-.brief-description-text {
+.brief-text {
   padding-top: 4px;
   line-height: 1.5;
   color: #ffffff;
@@ -190,16 +238,17 @@ body {
 /** ====================== CODEX ================== */
 
 .codex {
-  padding: 186px 95px;
   background: url(/images/space.png) no-repeat center 100%;
 }
 
 .codex-content {
+  padding-top: 186px;
+  padding-bottom: 186px;
   display: flex;
   justify-content: space-between;
 }
 
-.codex-title-text {
+.codex-title {
   max-width: 573px;
   color: #ffc700;
   font-size: 46px;
@@ -209,11 +258,11 @@ body {
   letter-spacing: 0.02em;
 }
 
-.rigth-content {
+.content {
   margin-left: 24px;
 }
 
-.codex-title {
+.codex-subtitle {
   color: #ffc700;
   font-size: 16px;
   font-weight: 700;
@@ -256,11 +305,12 @@ body {
 }
 
 .footer-content {
-  padding: 60px;
-  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-text {
+  text-align: center;
   margin: 0 auto;
   margin-bottom: 40px;
   max-width: 740px;
@@ -268,6 +318,10 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5; /* 150% */
+}
+
+.footer-img {
+  margin: 0 auto;
 }
 
 /* ================================================ */
