@@ -339,4 +339,76 @@ body {
   margin: 0 auto;
 }
 
-/* ================================================ */
+/* ==================== MODAL-FORM ======================= */
+
+.modal-section {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 100;
+  background: rgba(21, 20, 29, 0.4);
+}
+
+.modal-window {
+  width: 600px;
+  height: 404px;
+  padding: 40px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ebebeb;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-title {
+  color: #4b526a;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5em;
+}
+
+.modal-subtitle {
+  margin-top: 4px;
+  color: #15141d;
+  line-height: 1.5em;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+}
+
+.form-label {
+  color: #15141d;
+  line-height: 1.5em;
+}
+
+.form-label_email {
+  margin-top: 16px;
+}
+
+.form-input {
+  margin-top: 4px;
+  width: 440px;
+  height: 40px;
+  border: 1px solid #15141d;
+}
+
+.form-button {
+  width: 207px;
+  margin: 32px auto 0 auto;
+  padding: 16px 32px;
+  border-radius: 38px;
+  background: #4b526a;
+  border: none;
+  display: block;
+
+  color: #ffffff;
+  line-height: 1.5em;
+}
