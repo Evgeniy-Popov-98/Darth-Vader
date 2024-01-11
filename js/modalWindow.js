@@ -1,6 +1,8 @@
+'use strick';
+
 document.addEventListener('DOMContentLoaded', function () {
-  const openModal = document.getElementById('openModal');
-  const closeModal = document.getElementById('closeModal');
+  const openWindowModal = document.getElementById('openModal');
+  const closeWindowModal = document.getElementById('closeModal');
   const modalSection = document.querySelector('.modal-section');
   let isOpen = false;
 
@@ -10,13 +12,12 @@ document.addEventListener('DOMContentLoaded', function () {
       modalSection.style.opacity = '1';
       modalSection.style.visibility = 'visible';
       modalSection.style.pointerEvents = 'auto';
-      console.log('open');
     } else {
       modalSection.style.opacity = '0';
       modalSection.style.visibility = 'hidden';
       modalSection.style.pointerEvents = 'none';
-      console.log('no-open');
     }
+    document.addEventListener('keydown', hiddenModal);
   }
 
   function closeModal() {
@@ -24,26 +25,49 @@ document.addEventListener('DOMContentLoaded', function () {
     modalSection.style.opacity = '0';
     modalSection.style.visibility = 'hidden';
     modalSection.style.pointerEvents = 'none';
-    console.log('close');
   }
-  openModal.addEventListener('click', openModal);
-  closeModal.addEventListener('click', closeModal);
+
+  function hiddenModal(e) {
+    console.log(e.code);
+    if (e.code === 'Escape') {
+      closeModal();
+      document.removeEventListener('keydown', hiddenModal);
+    }
+  }
+
+  function clickCloseModal(e) {
+    if (e.target.nodeName === 'SECTION') {
+      closeModal();
+    }
+  }
+
+  openWindowModal.addEventListener('click', openModal);
+  closeWindowModal.addEventListener('click', closeModal);
+  modalSection.addEventListener('click', clickCloseModal);
 });
 
-// function modal() {
-//   isOpen = true;
+/*========================================================================================*/
+
+// const modalWindow = document.querySelector('.modal-section');
+// const openWindowModal = document.querySelector('#openModal');
+// const closeWindowModal = document.querySelector('#closeModal');
+
+// // isOpen != isOpen;
+
+// function openWindow() {
+//   const isOpen = true;
 //   if (isOpen) {
-//     modalSection.style.opacity = '1';
-//     modalSection.style.visibility = 'visible';
-//     modalSection.style.pointerEvents = 'auto';
-//     console.log('open');
-//   } else {
-//     console.log('no-open');
+//     modalWindow.style.opacity = '1';
+//     modalWindow.style.visibility = 'visible';
+//     modalWindow.style.pointerEvents = 'auto';
 //   }
 // }
 
-// const modalSection = document.querySelector('.hero-left-content-link');
+// function closeWindiw() {
+//   modalWindow.style.opacity = '0';
+//   modalWindow.style.visibility = 'hidden';
+//   modalWindow.style.pointerEvents = 'none';
+// }
 
-// console.log('Helo');
-
-// modalSection.addEventListener('click', modal);
+// openWindowModal.addEventListener('click', openWindow);
+// closeWindowModal.addEventListener('click', closeWindiw);
