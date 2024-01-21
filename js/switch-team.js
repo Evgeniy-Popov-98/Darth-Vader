@@ -1,11 +1,11 @@
 'use strick';
 const teamMain = document.querySelector('body');
-console.log(teamMain);
 const switchButton = document.querySelector('.button-war');
 const logoIcon = document.querySelectorAll('.logo');
 const socialIcons = document.querySelectorAll('.social-icons');
 const achievementIcons = document.querySelectorAll('#achievement-icons');
 const footerIcon = document.querySelectorAll('.footer-img');
+const modalIcons = document.querySelectorAll('.modal-info-svg');
 switchButton.addEventListener('click', switchTeam);
 
 function switchTeam(event) {
@@ -40,6 +40,14 @@ function switchTeam(event) {
   }
 
   for (const item of footerIcon) {
+    if (item.classList.contains('visually-hidden')) {
+      item.classList.replace('visually-hidden', 'is-open');
+    } else if (item.classList.contains('is-open')) {
+      item.classList.replace('is-open', 'visually-hidden');
+    }
+  }
+
+  for (const item of modalIcons) {
     if (item.classList.contains('visually-hidden')) {
       item.classList.replace('visually-hidden', 'is-open');
     } else if (item.classList.contains('is-open')) {

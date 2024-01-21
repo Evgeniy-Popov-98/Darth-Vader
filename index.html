@@ -172,17 +172,17 @@
 			</div>
 		</section>
 
-		<section class="modal-section">
-			<div class="modal-window">
-				<button class="close-modal" type="button" id="closeModal">
+		<section class="modal-form-window modal-section">
+			<div class="madol-form modal-window">
+				<button class="close-modal" type="button" id="closeFormModal">
 					<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
 						<path
 							d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z"
 							fill="#15141D" />
 					</svg>
 				</button>
-				<h2 class="modal-title">Принесение клятвы верности</h2>
-				<p class="modal-subtitle">избавит тебя от обуз морали и этики</p>
+				<h2 class="modal-form-title">Принесение клятвы верности</h2>
+				<p class="modal-form-subtitle">избавит тебя от обуз морали и этики</p>
 				<form class="modal-form" autocomplete="on">
 					<label class="form-label_name form-label" for="user">Имя</label>
 					<input class="form-input" type="text" name="user" id="user">
@@ -190,6 +190,23 @@
 					<input class="form-input" type="text" name="email" id="email">
 					<button class="form-button" type="submit">Принести клятву</button>
 				</form>
+			</div>
+		</section>
+
+		<section class="modal-info-modal modal-section">
+			<div class="modal-info modal-window">
+				<button class="close-modal" type="button" id="closeInfoModal">
+					<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+						<path
+							d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z"
+							fill="#15141D" />
+					</svg>
+				</button>
+				<h2 class="modal-info-title">Клятва принесена</h2>
+				<p class="modal-info-subtitle">Ожидайте прибытия космического челнока для переброски в центр обучения и
+					подготовки ситхов.</p>
+				<img class="modal-info-svg is-open" src="./images/icons/jet-light.svg" alt="Иконка Джета" width="60"></>
+				<img class="modal-info-svg visually-hidden" src="./images/icons/jet.svg" alt="Иконка Джета"></img>
 			</div>
 		</section>
 	</main>

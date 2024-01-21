@@ -1,9 +1,13 @@
 'use strick';
 
 document.addEventListener('DOMContentLoaded', function () {
-  const openWindowModal = document.getElementById('openModal');
-  const closeWindowModal = document.getElementById('closeModal');
-  const modalSection = document.querySelector('.modal-section');
+  const openFormModal = document.getElementById('openModal');
+  const closeFormModal = document.getElementById('closeFormModal');
+  const modalSection = document.querySelector('.modal-form-window');
+  const formButton = document.querySelector('.form-button');
+
+  const modalInfoClose = document.getElementById('closeInfoModal');
+  const modalInfoSection = document.querySelector('.modal-info-modal');
   let isOpen = false;
 
   function openModal() {
@@ -26,11 +30,16 @@ document.addEventListener('DOMContentLoaded', function () {
     modalSection.style.visibility = 'hidden';
     modalSection.style.pointerEvents = 'none';
   }
+  function closeInfoModal() {
+    modalInfoSection.style.opacity = '0';
+    modalInfoSection.style.visibility = 'hidden';
+    modalInfoSection.style.pointerEvents = 'none';
+  }
 
   function hiddenModal(e) {
-    console.log(e.code);
     if (e.code === 'Escape') {
       closeModal();
+      closeInfoModal();
       document.removeEventListener('keydown', hiddenModal);
     }
   }
@@ -38,36 +47,24 @@ document.addEventListener('DOMContentLoaded', function () {
   function clickCloseModal(e) {
     if (e.target.nodeName === 'SECTION') {
       closeModal();
+      closeInfoModal();
     }
   }
 
-  openWindowModal.addEventListener('click', openModal);
-  closeWindowModal.addEventListener('click', closeModal);
+  function openInfoModal(e) {
+    e.preventDefault();
+    closeModal();
+    modalInfoSection.style.opacity = '1';
+    modalInfoSection.style.visibility = 'visible';
+    modalInfoSection.style.pointerEvents = 'auto';
+
+    modalInfoClose.addEventListener('click', closeInfoModal);
+    document.addEventListener('keydown', hiddenModal);
+    modalInfoSection.addEventListener('click', clickCloseModal);
+  }
+
+  openFormModal.addEventListener('click', openModal);
+  closeFormModal.addEventListener('click', closeModal);
   modalSection.addEventListener('click', clickCloseModal);
+  formButton.addEventListener('click', openInfoModal);
 });
-
-/*========================================================================================*/
-
-// const modalWindow = document.querySelector('.modal-section');
-// const openWindowModal = document.querySelector('#openModal');
-// const closeWindowModal = document.querySelector('#closeModal');
-
-// // isOpen != isOpen;
-
-// function openWindow() {
-//   const isOpen = true;
-//   if (isOpen) {
-//     modalWindow.style.opacity = '1';
-//     modalWindow.style.visibility = 'visible';
-//     modalWindow.style.pointerEvents = 'auto';
-//   }
-// }
-
-// function closeWindiw() {
-//   modalWindow.style.opacity = '0';
-//   modalWindow.style.visibility = 'hidden';
-//   modalWindow.style.pointerEvents = 'none';
-// }
-
-// openWindowModal.addEventListener('click', openWindow);
-// closeWindowModal.addEventListener('click', closeWindiw);

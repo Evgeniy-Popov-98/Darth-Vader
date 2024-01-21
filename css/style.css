@@ -4,6 +4,7 @@ body.light {
   --text-color: #15141d;
   --title-color: #4b526a;
   --button-color-text: #fff;
+  --fill-svg: #15141d;
 }
 body.dark {
   --bg-color: #222527;
@@ -110,14 +111,13 @@ body {
   height: 12px;
   border-radius: 50%;
   background-color: var(--title-color);
-  transition: 1000ms linear;
 }
 
 /*!++++++++++++++++++++++++++ ????? +++++++++++++++++++++++++++++++*/
 
-.box-button:active {
-  left: 15px;
+body.light .box-button {
   position: relative;
+  left: 15px;
 }
 
 /* ---------------------- HERO ----------------------- */
@@ -404,7 +404,6 @@ body {
   width: 100vw;
   height: 100vh;
   position: fixed;
-  z-index: 100;
   background: rgba(21, 20, 29, 0.4);
   opacity: 0;
   visibility: hidden;
@@ -441,14 +440,14 @@ body {
   fill: var(--fill-svg);
 }
 
-.modal-title {
+.modal-form-title {
   color: var(--title-color);
   font-size: 16px;
   font-weight: 700;
   line-height: 1.5em;
 }
 
-.modal-subtitle {
+.modal-form-subtitle {
   margin-top: 4px;
   color: var(--text-color);
   line-height: 1.5em;
@@ -489,4 +488,22 @@ body {
 
   color: var(--button-color-text);
   line-height: 1.5em;
+}
+
+/*======================== MODAL-INFO ======================*/
+
+.modal-info-title {
+  color: var(--title-color);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.modal-info-subtitle {
+  margin: 112px 0 32px 0;
+  color: var(--text-color);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 1.5;
 }
