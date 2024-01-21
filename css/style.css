@@ -1,6 +1,6 @@
 body.light {
   --bg-color: #ebebeb;
-  --img-bg: url(/images/space-light.png) no-repeat center top;
+  --img-bg: url(../images/space-light.png) no-repeat center top;
   --text-color: #15141d;
   --title-color: #4b526a;
   --button-color-text: #fff;
@@ -8,7 +8,7 @@ body.light {
 }
 body.dark {
   --bg-color: #222527;
-  --img-bg: url(/images/space.png) no-repeat center top;
+  --img-bg: url(../images/space.png) no-repeat center top;
   --text-color: #ffffff;
   --title-color: #ffc700;
   --button-color-text: #060803;
