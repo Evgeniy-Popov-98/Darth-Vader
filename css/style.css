@@ -1,16 +1,18 @@
 :root {
   --bg-color: #ebebeb;
-  --img-bg: url(../images/space-light.png) no-repeat center top;
+  --img-bg: url(../images/background/space-light.png) no-repeat center top;
   --text-color: #15141d;
   --title-color: #4b526a;
   --button-color-text: #fff;
   --fill-svg: #4b526a;
+
+  background-color: #0000005e;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --bg-color: #222527;
-    --img-bg: url(../images/space.png) no-repeat center top;
+    --img-bg: url(../images/background/space.png) no-repeat center top;
     --text-color: #ffffff;
     --title-color: #ffc700;
     --button-color-text: #060803;
@@ -20,7 +22,7 @@
 
 body.light {
   --bg-color: #ebebeb;
-  --img-bg: url(../images/space-light.png) no-repeat center top;
+  --img-bg: url(../images/background/space-light.png) no-repeat center top;
   --text-color: #15141d;
   --title-color: #4b526a;
   --button-color-text: #fff;
@@ -29,7 +31,7 @@ body.light {
 
 body.dark {
   --bg-color: #222527;
-  --img-bg: url(../images/space.png) no-repeat center top;
+  --img-bg: url(../images/background/space.png) no-repeat center top;
   --text-color: #ffffff;
   --title-color: #ffc700;
   --button-color-text: #060803;
