@@ -33,7 +33,7 @@ body.dark {
   --text-color: #ffffff;
   --title-color: #ffc700;
   --button-color-text: #060803;
-  --fill-svg: #ffffff;
+  --fill-svg: #ffc700;
 }
 
 * {
@@ -136,6 +136,7 @@ body {
   background-color: inherit;
   cursor: pointer;
 }
+
 .box-button {
   margin: 3px 4px;
   width: 12px;
