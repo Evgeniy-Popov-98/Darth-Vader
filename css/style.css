@@ -1,10 +1,30 @@
+:root {
+  --bg-color: #ebebeb;
+  --img-bg: url(../images/space-light.png) no-repeat center top;
+  --text-color: #15141d;
+  --title-color: #4b526a;
+  --button-color-text: #fff;
+  --fill-svg: #4b526a;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #222527;
+    --img-bg: url(../images/space.png) no-repeat center top;
+    --text-color: #ffffff;
+    --title-color: #ffc700;
+    --button-color-text: #060803;
+    --fill-svg: #ffc700;
+  }
+}
+
 body.light {
   --bg-color: #ebebeb;
   --img-bg: url(../images/space-light.png) no-repeat center top;
   --text-color: #15141d;
   --title-color: #4b526a;
   --button-color-text: #fff;
-  --fill-svg: #15141d;
+  --fill-svg: #4b526a;
 }
 
 body.dark {
@@ -14,17 +34,6 @@ body.dark {
   --title-color: #ffc700;
   --button-color-text: #060803;
   --fill-svg: #ffffff;
-}
-
-@media (prefers-color-scheme: dark) {
-  body.dark {
-    --bg-color: #222527;
-    --img-bg: url(../images/space.png) no-repeat center top;
-    --text-color: #ffffff;
-    --title-color: #ffc700;
-    --button-color-text: #060803;
-    --fill-svg: #ffffff;
-  }
 }
 
 * {
@@ -89,6 +98,10 @@ body {
   display: flex;
   justify-content: space-between;
   z-index: 10000;
+}
+
+.header-logo {
+  fill: var(--fill-svg);
 }
 
 .header-switch {
@@ -279,6 +292,10 @@ body.light .box-button {
   font-weight: 400;
 }
 
+.social-icons {
+  fill: var(--fill-svg);
+}
+
 /*-----------------------------  BRIEF  ------------------------*/
 
 .brief {
@@ -308,6 +325,10 @@ body.light .box-button {
 
 .brief-item {
   width: calc((100% - 24px * 3) / 4);
+}
+
+.brief-icon {
+  fill: var(--fill-svg);
 }
 
 .brief-subtitle {
@@ -412,6 +433,12 @@ body.light .box-button {
 
 .footer-img {
   margin: 0 auto;
+}
+
+.footer-icon {
+  display: block;
+  margin: 0 auto;
+  fill: var(--fill-svg);
 }
 
 /* ==================== MODAL-FORM ======================= */
@@ -524,4 +551,10 @@ body.light .box-button {
   font-family: Montserrat;
   font-size: 16px;
   line-height: 1.5;
+}
+
+.modal-icon {
+  display: block;
+  margin: 0 auto;
+  fill: var(--fill-svg);
 }
