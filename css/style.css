@@ -32,10 +32,16 @@ body.dark {
   padding: 0;
 }
 
-a,
-ul {
+a {
+  color: currentColor;
   text-decoration: none;
-  list-style: none; /*------------Уточнить-------------*/
+  line-height: 0;
+}
+
+ul,
+li {
+  text-decoration: none;
+  list-style: none;
 }
 
 img {
