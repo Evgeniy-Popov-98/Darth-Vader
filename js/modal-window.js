@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const openFormModal = document.getElementById('openModal');
   const closeFormModal = document.getElementById('closeFormModal');
   const modalSection = document.querySelector('.modal-form-window');
-  const formButton = document.querySelector('.form-button');
+  const formButton = document.querySelector('.modal-form');
 
   const modalInfoClose = document.getElementById('closeInfoModal');
   const modalInfoSection = document.querySelector('.modal-info-modal');
@@ -66,5 +66,5 @@ document.addEventListener('DOMContentLoaded', function () {
   openFormModal.addEventListener('click', openModal);
   closeFormModal.addEventListener('click', closeModal);
   modalSection.addEventListener('click', clickCloseModal);
-  formButton.addEventListener('click', openInfoModal);
+  formButton.addEventListener('submit', openInfoModal);
 });
